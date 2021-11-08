@@ -1,0 +1,42 @@
+[ArgumentNullException]: Value cannot be null.
+Parameter name: TrackerID
+   at MFDLabs.Google.Analytics.Client.GAClient.<BuildSharedBody>d__1.MoveNext() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Google.Analytics.Client\Implementation\GAClient.cs:line 26
+   at System.Linq.Enumerable.<ConcatIterator>d__59`1.MoveNext()
+   at MFDLabs.Google.Analytics.Client.FormDataRequestSender.BuildBody(IEnumerable`1 formParameters) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Google.Analytics.Client\Implementation\FormDataRequestSender.cs:line 63
+   at MFDLabs.Google.Analytics.Client.FormDataRequestSender.SendRequest(HttpMethod method, String path, IEnumerable`1 formParameters) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Google.Analytics.Client\Implementation\FormDataRequestSender.cs:line 30
+   at MFDLabs.Google.Analytics.Client.GAClient.TrackEvent(String clientID, String category, String eventName, String label, Int32 value, String source, Boolean shouldClose) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Google.Analytics.Client\Implementation\GAClient.cs:line 88
+   at MFDLabs.Analytics.Google.GoogleAnalyticsManager.TrackEvent(String clientID, String category, String action, String label, Int32 value) in C:\git\MFDLABS\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Analytics.Google\GoogleAnalyticsManager.cs:line 31
+   at MFDLabs.Internal.CorpTest.Site.Extensions.GoogleAnalyticsTrackerExtensions.TrackPageViewEvent(IGoogleAnalyticsManager tracker, String viewName, String originAddress) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Extensions\GoogleAnalyticsTrackerExtensions.cs:line 9
+   at ASP._Page_Views_test_Index_cshtml.Execute() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Views\test\Index.cshtml:line 7
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__4()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__1(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c.<BeginExecuteCore>b__152_1(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c.<BeginExecute>b__151_2(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<>c.<BeginProcessRequest>b__20_1(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
