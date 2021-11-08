@@ -1,0 +1,16 @@
+[ArgumentException]: The ContextOptions passed are invalid for this store type.  Either Negotiate or SimpleBind must be specified and they cannot be combined.
+   at System.DirectoryServices.AccountManagement.PrincipalContext..ctor(ContextType contextType, String name, String container, ContextOptions options, String userName, String password)
+   at MFDLabs.ActiveDirectory.PrincipalContextFactory.GetMasterContext() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\Factories\PrincipalContextFactory.cs:line 9
+   at MFDLabs.ActiveDirectory.ActiveDirectoryUserProvider.GetUserPrinicpalByUsername(String userName) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\ActiveDirectoryUserProvider.cs:line 9
+   at MFDLabs.ActiveDirectory.ActiveDirectoryAccessVerifier.VerifyActiveUserName(String userName) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\ActiveDirectoryAccessVerifier.cs:line 7
+   at MFDLabs.Internal.CorpTest.Site.MvcApplication.Application_Start() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Global.asax.cs:line 24
+[HttpException]: The ContextOptions passed are invalid for this store type.  Either Negotiate or SimpleBind must be specified and they cannot be combined.
+   at System.Web.HttpApplicationFactory.EnsureAppStartCalledForIntegratedMode(HttpContext context, HttpApplication app)
+   at System.Web.HttpApplication.RegisterEventSubscriptionsWithIIS(IntPtr appContext, HttpContext context, MethodInfo[] handlers)
+   at System.Web.HttpApplication.InitSpecial(HttpApplicationState state, MethodInfo[] handlers, IntPtr appContext, HttpContext context)
+   at System.Web.HttpApplicationFactory.GetSpecialApplicationInstance(IntPtr appContext, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.InitializeApplication(IntPtr appContext)
+[HttpException]: The ContextOptions passed are invalid for this store type.  Either Negotiate or SimpleBind must be specified and they cannot be combined.
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
