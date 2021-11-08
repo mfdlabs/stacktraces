@@ -1,0 +1,18 @@
+[LdapException]: The LDAP server is unavailable.
+   at System.DirectoryServices.Protocols.LdapConnection.Connect()
+   at System.DirectoryServices.Protocols.LdapConnection.BindHelper(NetworkCredential newCredential, Boolean needSetCredential)
+   at System.DirectoryServices.Protocols.LdapConnection.Bind()
+   at MFDLabs.ActiveDirectory.LDAPServerProvider.ServiceIsAlive(String hostName, Boolean isSecure) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\LDAPServerProvider.cs:line 18
+[LdapException]: Unable to connect to the LDAP server 'ldap://two-time-petko-ad.app3615.wckie02-ie-east-02.mfdlabs.local', are you sure it's up?
+   at MFDLabs.ActiveDirectory.LDAPServerProvider.ServiceIsAlive(String hostName, Boolean isSecure) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\LDAPServerProvider.cs:line 24
+   at MFDLabs.Internal.CorpTest.Site.MvcApplication.Application_Start() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Global.asax.cs:line 24
+[HttpException]: Unable to connect to the LDAP server 'ldap://two-time-petko-ad.app3615.wckie02-ie-east-02.mfdlabs.local', are you sure it's up?
+   at System.Web.HttpApplicationFactory.EnsureAppStartCalledForIntegratedMode(HttpContext context, HttpApplication app)
+   at System.Web.HttpApplication.RegisterEventSubscriptionsWithIIS(IntPtr appContext, HttpContext context, MethodInfo[] handlers)
+   at System.Web.HttpApplication.InitSpecial(HttpApplicationState state, MethodInfo[] handlers, IntPtr appContext, HttpContext context)
+   at System.Web.HttpApplicationFactory.GetSpecialApplicationInstance(IntPtr appContext, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.InitializeApplication(IntPtr appContext)
+[HttpException]: Unable to connect to the LDAP server 'ldap://two-time-petko-ad.app3615.wckie02-ie-east-02.mfdlabs.local', are you sure it's up?
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
