@@ -1,0 +1,34 @@
+[DirectoryServicesCOMException]: An operations error occurred.
+
+   at System.DirectoryServices.DirectoryEntry.Bind(Boolean throwIfFail)
+   at System.DirectoryServices.DirectoryEntry.Bind()
+   at System.DirectoryServices.DirectoryEntry.get_SchemaEntry()
+   at System.DirectoryServices.AccountManagement.ADStoreCtx.IsContainer(DirectoryEntry de)
+   at System.DirectoryServices.AccountManagement.ADStoreCtx..ctor(DirectoryEntry ctxBase, Boolean ownCtxBase, String username, String password, ContextOptions options)
+   at System.DirectoryServices.AccountManagement.PrincipalContext.CreateContextFromDirectoryEntry(DirectoryEntry entry)
+   at System.DirectoryServices.AccountManagement.PrincipalContext.DoLDAPDirectoryInit()
+[PrincipalOperationException]: An operations error occurred.
+
+   at System.DirectoryServices.AccountManagement.PrincipalContext.DoLDAPDirectoryInit()
+   at System.DirectoryServices.AccountManagement.PrincipalContext.DoDomainInit()
+   at System.DirectoryServices.AccountManagement.PrincipalContext.Initialize()
+   at System.DirectoryServices.AccountManagement.PrincipalContext.get_QueryCtx()
+   at System.DirectoryServices.AccountManagement.Principal.FindByIdentityWithTypeHelper(PrincipalContext context, Type principalType, Nullable`1 identityType, String identityValue, DateTime refDate)
+   at System.DirectoryServices.AccountManagement.Principal.FindByIdentityWithType(PrincipalContext context, Type principalType, IdentityType identityType, String identityValue)
+   at System.DirectoryServices.AccountManagement.UserPrincipal.FindByIdentity(PrincipalContext context, IdentityType identityType, String identityValue)
+   at MFDLabs.ActiveDirectory.ActiveDirectoryUserProvider.GetUserPrinicpalByUsername(String userName, PrincipalContext context)
+   at MFDLabs.ActiveDirectory.ActiveDirectoryUserProvider.GetUserPrinicpalByUsername(String userName)
+   at MFDLabs.ActiveDirectory.ActiveDirectoryAccessVerifier.VerifyActiveUserName(String userName)
+   at MFDLabs.Internal.CorpTest.Site.MvcApplication.Application_Start() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Global.asax.cs:line 24
+[HttpException]: An operations error occurred.
+
+   at System.Web.HttpApplicationFactory.EnsureAppStartCalledForIntegratedMode(HttpContext context, HttpApplication app)
+   at System.Web.HttpApplication.RegisterEventSubscriptionsWithIIS(IntPtr appContext, HttpContext context, MethodInfo[] handlers)
+   at System.Web.HttpApplication.InitSpecial(HttpApplicationState state, MethodInfo[] handlers, IntPtr appContext, HttpContext context)
+   at System.Web.HttpApplicationFactory.GetSpecialApplicationInstance(IntPtr appContext, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.InitializeApplication(IntPtr appContext)
+[HttpException]: An operations error occurred.
+
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
