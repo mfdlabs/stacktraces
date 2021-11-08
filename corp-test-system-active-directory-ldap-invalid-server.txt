@@ -1,0 +1,18 @@
+[ArgumentNullException]: Value cannot be null.
+Parameter name: MasterLDAPServer
+   at MFDLabs.ActiveDirectory.PrincipalContextFactory.GetMasterContext() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\Factories\PrincipalContextFactory.cs:line 12
+   at MFDLabs.ActiveDirectory.ActiveDirectoryUserProvider.GetUserPrinicpalByUsername(String userName) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\ActiveDirectoryUserProvider.cs:line 9
+   at MFDLabs.ActiveDirectory.ActiveDirectoryAccessVerifier.VerifyActiveUserName(String userName) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.ActiveDirectory\ActiveDirectoryAccessVerifier.cs:line 7
+   at MFDLabs.Internal.CorpTest.Site.MvcApplication.Application_Start() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Global.asax.cs:line 24
+[HttpException]: Value cannot be null.
+Parameter name: MasterLDAPServer
+   at System.Web.HttpApplicationFactory.EnsureAppStartCalledForIntegratedMode(HttpContext context, HttpApplication app)
+   at System.Web.HttpApplication.RegisterEventSubscriptionsWithIIS(IntPtr appContext, HttpContext context, MethodInfo[] handlers)
+   at System.Web.HttpApplication.InitSpecial(HttpApplicationState state, MethodInfo[] handlers, IntPtr appContext, HttpContext context)
+   at System.Web.HttpApplicationFactory.GetSpecialApplicationInstance(IntPtr appContext, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.InitializeApplication(IntPtr appContext)
+[HttpException]: Value cannot be null.
+Parameter name: MasterLDAPServer
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
