@@ -1,0 +1,16 @@
+[NullReferenceException]: Object reference not set to an instance of an object.
+   at MFDLabs.Diagnostics.SystemGlobal..cctor() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Diagnostics\Singleton\SystemGlobal.cs:line 51
+[TypeInitializationException]: The type initializer for 'MFDLabs.Diagnostics.SystemGlobal' threw an exception.
+   at MFDLabs.Diagnostics.SystemGlobal.get_CurrentProcess()
+   at MFDLabs.Logging.EventLogSystemLogger..ctor(EventLog eventLog) in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\Assemblies\MFDLabs.Logging\Implementation\EventLogSystemLogger.cs:line 20
+   at MFDLabs.Internal.CorpTest.Site.MvcApplication.Application_Start() in C:\git\MFDLabs\MFDLabs.Internal.CorpTest\MFDLabs.Internal.CorpTest.Site\Global.asax.cs:line 23
+[HttpException]: The type initializer for 'MFDLabs.Diagnostics.SystemGlobal' threw an exception.
+   at System.Web.HttpApplicationFactory.EnsureAppStartCalledForIntegratedMode(HttpContext context, HttpApplication app)
+   at System.Web.HttpApplication.RegisterEventSubscriptionsWithIIS(IntPtr appContext, HttpContext context, MethodInfo[] handlers)
+   at System.Web.HttpApplication.InitSpecial(HttpApplicationState state, MethodInfo[] handlers, IntPtr appContext, HttpContext context)
+   at System.Web.HttpApplicationFactory.GetSpecialApplicationInstance(IntPtr appContext, HttpContext context)
+   at System.Web.Hosting.PipelineRuntime.InitializeApplication(IntPtr appContext)
+[HttpException]: The type initializer for 'MFDLabs.Diagnostics.SystemGlobal' threw an exception.
+   at System.Web.HttpRuntime.FirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.EnsureFirstRequestInit(HttpContext context)
+   at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)
