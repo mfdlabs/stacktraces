@@ -1,0 +1,25 @@
+Error Type: System.TypeInitializationException
+Error Detail: The type initializer for 'MFDLabs.Grid.Bot.Properties.SettingsProvider' threw an exception.
+Inner Exception: System.ArgumentException: 'vaultToken' value is empty or contains white-space characters only.
+Parameter name: vaultToken
+   at MFDLabs.Hashicorp.VaultClient.Core.Checker.NotNull(String value, String name) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Hashicorp.VaultClient\Core\Checker.cs:line 27
+   at MFDLabs.Hashicorp.VaultClient.V1.AuthMethods.Token.TokenAuthMethodInfo..ctor(String vaultToken) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Hashicorp.VaultClient\V1\AuthMethods\Token\TokenAuthMethodInfo.cs:line 32
+   at MFDLabs.Discord.Configuration.VaultConfigurationClient..ctor(String address, String token) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Discord.Configuration\Clients\VaultConfigurationClient.cs:line 48
+   at MFDLabs.Discord.Configuration.DiscordConfigurationHelper.InitializeClient(String address, String token) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Discord.Configuration\DiscordConfigurationHelper.cs:line 15
+   at MFDLabs.Grid.Bot.Properties.SettingsProvider..cctor() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Properties\SettingsProvider.cs:line 14
+Exception Stack Trace: 
+   at MFDLabs.Grid.Bot.Properties.SettingsProvider.GetSetting[T](SocketMessage message, String settingName)
+   at MFDLabs.Grid.Bot.Events.OnMessage.<Invoke>d__0.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Events\OnMessage.cs:line 22
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at Discord.EventExtensions.<InvokeAsync>d__1`1.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\Dependencies\Discord.Net.Core\Utils\AsyncEvent.cs:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at Discord.WebSocket.DiscordSocketClient.<TimeoutWrap>d__160.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\Dependencies\Discord.Net.WebSocket\DiscordSocketClient.cs:line 2983
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: T GetSetting[T](Discord.WebSocket.SocketMessage, System.String)
+Exception Data: System.Collections.ListDictionaryInternal
