@@ -1,0 +1,13 @@
+Error Type: System.ApplicationException
+Error Detail: Unable to open grid server instance.
+Inner Exception:
+Exception Stack Trace:
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter.InvokeMethodToInvoke[T](Object[] args, MethodInfo methodToInvoke, GridServerInstance instance) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 570
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter.InvokeMethod[T](String method, String name, Int32 maxAttemptsToHitGridServer, String hostName, Boolean isPoolable, Object[] args) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 503
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter.BatchJobEx(Job job, ScriptExecution script, Int32 maxAttemptsToHitGridServer, String hostName) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 760
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter.BatchJobEx(Job job, ScriptExecution script) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 758
+   at MFDLabs.Grid.Bot.Plugins.ScriptExecutionTaskPlugin.OnReceive(Packet`1& packet) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Tasks\ScriptExecutionQueueUserMetricsTask.cs:line 258
+   at MFDLabs.Grid.Bot.Tasks.ScriptExecutionQueueUserMetricsTask.OnReceive(Packet`1& packet) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Tasks\ScriptExecutionQueueUserMetricsTask.cs:line 52
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: T InvokeMethodToInvoke[T](System.Object[], System.Reflection.MethodInfo, GridServerInstance)
+Exception Data: System.Collections.ListDictionaryInternal
