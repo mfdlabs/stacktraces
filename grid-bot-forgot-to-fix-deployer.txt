@@ -1,0 +1,20 @@
+Error Type: System.TypeInitializationException
+Error Detail: The type initializer for 'MFDLabs.Abstractions.SingletonBase`1' threw an exception.
+Inner Exception: System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
+   at MFDLabs.Grid.Bot.Utility.GridDeployerUtility.CheckHResult(Int32 hResult) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridDeployerUtility.cs:line 40
+   at MFDLabs.Grid.Bot.Utility.SystemUtility.OpenGridServer(Boolean onlyWebServer, Boolean onlyGridServer, Int32 gridServerPort) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\SystemUtility.cs:line 76
+   at MFDLabs.Grid.Bot.Utility.SystemUtility.OpenGridServerSafe(Boolean onlyWebServer, Boolean onlyGridServer, Int32 gridServerPort) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\SystemUtility.cs:line 105
+   at MFDLabs.Grid.Bot.Utility.SystemUtility.OpenWebServerIfNotOpen() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\SystemUtility.cs:line 124
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter.QueueUpArbiteredInstanceUnsafe(String name, Int32 maxAttemptsToHitGridServer, String hostName, Boolean startUp, Boolean openNowInNewThread) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 304
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter.BatchQueueUpArbiteredInstancesUnsafe(Int32 count, Int32 maxAttemptsToHitGridServer, String hostName, Boolean startUp) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 280
+   at MFDLabs.Grid.Bot.Utility.GridServerArbiter..ctor() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerArbiter.cs:line 50
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance[T]()
+   at MFDLabs.Abstractions.SingletonBase`1..cctor() in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Abstractions\SingletonBase.cs:line 17
+Exception Stack Trace:
+   at MFDLabs.Grid.Bot.Runner.<InvokeAsync>d__7.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Runner.cs:line 158
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: Void MoveNext()
+Exception Data: System.Collections.ListDictionaryInternal
