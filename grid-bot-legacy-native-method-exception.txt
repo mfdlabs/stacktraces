@@ -1,0 +1,12 @@
+Error Detail: Attempt by security transparent method 'MFDLabs.Drawing.BitmapExtensions.GetBitmapForWindowByWindowHandle(IntPtr)' to call native code through method 'MFDLabs.Drawing.NativeMethods.GetWindowRect(IntPtr, MFDLabs.Drawing.Models.BaseRectangle ByRef)' failed.  Methods must be security critical or security safe-critical to call native code.
+Inner Exception: 
+Exception Stack Trace:    at MFDLabs.Drawing.BitmapExtensions.GetBitmapForWindowByWindowHandle(IntPtr hwnd) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Drawing\BitmapExtensions.cs:line 12
+   at MFDLabs.Grid.Bot.Commands.ViewCurrentConsole.<Callback>d__8.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Commands\ViewCurrentConsole.cs:line 35
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at MFDLabs.Grid.Bot.Registries.CommandRegistry.<CheckAndRunCommand>d__6.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Registries\CommandRegistry.cs:line 128
+Exception Source: MFDLabs.Drawing
+Exception TargetSite: System.Drawing.Bitmap GetBitmapForWindowByWindowHandle(IntPtr)
+Exception Data: System.Collections.ListDictionaryInternal
