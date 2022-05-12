@@ -1,0 +1,8 @@
+Error Detail: The method or operation is not implemented.
+Inner Exception:
+Exception Stack Trace: 
+  at MFDLabs.Grid.Bot.Commands.RestartBot.Callback(String[] messageContentArray, SocketMessage message, String originalCommand) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Commands\RestartBot.cs:line 20
+  at MFDLabs.Grid.Bot.Registries.CommandRegistry.<CheckAndRunCommand>d__6.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Registries\CommandRegistry.cs:line 128
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: System.Threading.Tasks.Task Callback(System.String[], Discord.WebSocket.SocketMessage, System.String)
+Exception Data: System.Collections.ListDictionaryIntern
