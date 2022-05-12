@@ -1,0 +1,14 @@
+Error Detail: Parameter is not valid.
+Inner Exception: 
+Exception Stack Trace:    at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at MFDLabs.Drawing.BitmapExtensions.GetWindowBitmapAndDeviceHandle(BaseRectangle rect, Bitmap& bitmap, Graphics& graphics, IntPtr& hdc) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Drawing\BitmapExtensions.cs:line 21
+   at MFDLabs.Drawing.BitmapExtensions.GetBitmapForWindowByWindowHandle(IntPtr hwnd) in C:\git\MFDLabs\MFDLabs.Grid\Assemblies\MFDLabs.Drawing\BitmapExtensions.cs:line 13
+   at MFDLabs.Grid.Bot.Commands.ViewCurrentConsole.<Callback>d__8.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Commands\ViewCurrentConsole.cs:line 35
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at MFDLabs.Grid.Bot.Registries.CommandRegistry.<CheckAndRunCommand>d__6.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Registries\CommandRegistry.cs:line 128
+Exception Source: System.Drawing
+Exception TargetSite: Void .ctor(Int32, Int32, System.Drawing.Imaging.PixelFormat)
+Exception Data: System.Collections.ListDictionaryInternal
