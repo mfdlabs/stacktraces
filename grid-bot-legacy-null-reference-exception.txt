@@ -1,0 +1,8 @@
+Error Type: System.NullReferenceException
+Error Detail: Object reference not set to an instance of an object.
+Inner Exception: 
+Exception Stack Trace:    at MFDLabs.Grid.Bot.Utility.UserUtility.GetIsUserBanned(Int64 id) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\UserUtility.cs:line 25
+   at MFDLabs.Grid.Bot.Tasks.RenderTask.ProcessRequest(RenderTaskRequest item) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Tasks\RenderTask.cs:line 121
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: Boolean GetIsUserBanned(Int64)
+Exception Data: System.Collections.ListDictionaryInternal
