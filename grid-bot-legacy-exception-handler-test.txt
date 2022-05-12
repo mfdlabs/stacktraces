@@ -1,0 +1,12 @@
+Error Detail: Exception handler test.
+Inner Exception:
+Exception Stack Trace: 
+  at MFDLabs.Grid.Bot.Commands.ThrowTest.<Callback>d8.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Commands\ThrowTest.cs:line 23
+  --- End of stack trace from previous location where exception was thrown ---
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+  at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+  at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+  at MFDLabs.Grid.Bot.Registries.CommandRegistry.<CheckAndRunCommand>d6.MoveNext() in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Registries\CommandRegistry.cs:line 128
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: Void MoveNext()
+Exception Data: System.Collections.ListDictionaryInternal
