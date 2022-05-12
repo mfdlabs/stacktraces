@@ -1,0 +1,4 @@
+com::exception: Hello World
+	at com::dev::test() -> /mnt/kairex/build/aljek/test/src/main.fx:9
+	at com::dev::main(string[]) -> /mnt/kairex/build/aljek/test/src/main.fx:14
+	--> ENTRY POINT <--
