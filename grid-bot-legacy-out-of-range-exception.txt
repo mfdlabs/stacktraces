@@ -1,0 +1,9 @@
+Error Type: System.IndexOutOfRangeException
+Error Detail: Index was outside the bounds of the array.
+Inner Exception: 
+Exception Stack Trace:    at MFDLabs.Grid.Bot.Utility.GridServerCommandUtility.GetFileName(Int64 userID, Int64 placeID, ThumbnailSettings settings) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerCommandUtility.cs:line 158
+   at MFDLabs.Grid.Bot.Utility.GridServerCommandUtility.RenderUser(Int64 userId, Int64 placeId, Int32 sizeX, Int32 sizeY) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Utility\GridServerCommandUtility.cs:line 63
+   at MFDLabs.Grid.Bot.Tasks.RenderTask.ProcessRequest(RenderTaskRequest item) in C:\git\MFDLabs\MFDLabs.Grid\MFDLabs.Grid.Bot\Tasks\RenderTask.cs:line 145
+Exception Source: MFDLabs.Grid.Bot
+Exception TargetSite: System.String GetFileName(Int64, Int64, MFDLabs.Grid.Commands.ThumbnailSettings)
+Exception Data: System.Collections.ListDictionaryInternal
