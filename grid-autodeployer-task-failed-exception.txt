@@ -1,0 +1,26 @@
+Error Type: Octokit.NotFoundException
+Error Detail: Not Found
+Inner Exception:
+Exception Stack Trace:
+   at Octokit.Connection.HandleErrors(IResponse response) in /home/runner/work/octokit.net/octokit.net/Octokit/Http/Connection.cs:line 705
+   at Octokit.Connection.<RunRequest>d__60.MoveNext() in /home/runner/work/octokit.net/octokit.net/Octokit/Http/Connection.cs:line 682
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.Connection.<Run>d__59`1.MoveNext() in /home/runner/work/octokit.net/octokit.net/Octokit/Http/Connection.cs:line 666
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Octokit.ApiConnection.<Get>d__8`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at MFDLabs.Threading.Extensions.TaskExtensions.Sync[T](Task`1 task) in C:\git\@mfdlabs\grid-bot\Assemblies\MFDLabs.Threading\Extensions\TaskExtensions.cs:line 9
+   at MFDLabs.Threading.Extensions.TaskExtensions.SyncOrDefault[T](Task`1 task) in C:\git\@mfdlabs\grid-bot\Assemblies\MFDLabs.Threading\Extensions\TaskExtensions.cs:line 14
+   at MFDLabs.Grid.AutoDeployer.Service.AutoDeployerService.CachedVersionExistsRemotely() in C:\git\@mfdlabs\grid-bot\MFDLabs.Grid.AutoDeployer\Service\AutoDeployerService.cs:line 102
+   at MFDLabs.Grid.AutoDeployer.Service.AutoDeployerService.Run() in C:\git\@mfdlabs\grid-bot\MFDLabs.Grid.AutoDeployer\Service\AutoDeployerService.cs:line 231
+   at MFDLabs.Grid.AutoDeployer.Service.AutoDeployerService.<>c__DisplayClass46_0.<BackgroundWork>b__0() in C:\git\@mfdlabs\grid-bot\MFDLabs.Grid.AutoDeployer\Service\AutoDeployerService.cs:line 708
+Exception Source: Octokit
+Exception TargetSite: Void HandleErrors(Octokit.IResponse)
+Exception Data: System.Collections.ListDictionaryInternal
