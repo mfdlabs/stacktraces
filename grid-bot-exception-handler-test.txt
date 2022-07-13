@@ -1,0 +1,13 @@
+Error Type: System.ApplicationException
+Error Detail: Exception handler test.
+Inner Exception:
+Exception Stack Trace:
+   at MFDLabs.Grid.Bot.Guards.CommandCircuitBreakerWrapper.TripAndRethrow(Exception ex)
+   at MFDLabs.Grid.Bot.Guards.CommandCircuitBreakerWrapper.<ExecuteAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MFDLabs.Grid.Bot.Registries.CommandRegistry.<>c__DisplayClass22_0.<<ExecuteCommandInNewThread>b__0>d.MoveNext()
+Exception Source: MFDLabs.GridCommands
+Exception TargetSite: Void TripAndRethrow(System.Exception)
+Exception Data: System.Collections.ListDictionaryInternal
