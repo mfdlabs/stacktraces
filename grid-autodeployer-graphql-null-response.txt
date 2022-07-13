@@ -1,0 +1,21 @@
+Error Type: System.NullReferenceException
+Error Detail: Object reference not set to an instance of an object.
+Inner Exception: 
+Exception Stack Trace: 
+   at Octokit.GraphQL.Core.Deserializers.ResponseDeserializer.DeserializeException(JToken error)
+   at Octokit.GraphQL.Core.Deserializers.ResponseDeserializer.Deserialize[TResult](Func`2 deserialize, JObject data)
+   at Octokit.GraphQL.Core.SimpleQuery`1.Runner.<RunPage>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Octokit.GraphQL.ConnectionExtensions.<Run>d__2`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at MFDLabs.Threading.Extensions.TaskExtensions.Sync[T](Task`1 task) in C:\git\@mfdlabs\grid-bot\Assemblies\MFDLabs.Threading\Extensions\TaskExtensions.cs:line 9
+   at MFDLabs.Grid.AutoDeployer.Service.AutoDeployerService.DetermineIfNewReleaseAvailable(MinimalRelease& latestRelease, String nextPageCursor) in C:\git\@mfdlabs\grid-bot\MFDLabs.Grid.AutoDeployer\Service\AutoDeployerService.cs:line 554
+   at MFDLabs.Grid.AutoDeployer.Service.AutoDeployerService.Run() in C:\git\@mfdlabs\grid-bot\MFDLabs.Grid.AutoDeployer\Service\AutoDeployerService.cs:line 236
+   at MFDLabs.Grid.AutoDeployer.Service.AutoDeployerService.<>c__DisplayClass47_0.<BackgroundWork>b__0() in C:\git\@mfdlabs\grid-bot\MFDLabs.Grid.AutoDeployer\Service\AutoDeployerService.cs:line 713
+Exception Source: Octokit.GraphQL.Core
+Exception TargetSite: System.Exception DeserializeException(Newtonsoft.Json.Linq.JToken)
+Exception Data: System.Collections.ListDictionaryInternal
