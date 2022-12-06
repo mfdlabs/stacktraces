@@ -1,0 +1,25 @@
+[2022-12-06T20:38:51.0324Z][0003][10.124.30.102][dev1-eu-west-1.kvex.arc.cloud][bot][ERROR] [EID-54539fb7-86b2-487c-b9c1-4a02537cd3e6] An unexpected error occurred: 
+Error Type: System.NullReferenceException
+Error Detail: Object reference not set to an instance of an object.
+Inner Exception: 
+Exception Stack Trace: 
+   at MFDLabs.Grid.Bot.Commands.GetAllSettingsOfAssembly.<Invoke>d__12.MoveNext() in K:\vex\v4\31f0fc4c68f5cb2e\Shared\MFDLabs.GridCommands\Commands\GetAllSettingsOfAssembly.cs:line 114
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MFDLabs.Grid.Bot.Guards.CommandCircuitBreakerWrapper.<>c__DisplayClass7_0.<<ExecuteAsync>b__0>d.MoveNext() in K:\vex\v4\31f0fc4c68f5cb2e\Shared\MFDLabs.GridCommands\Guards\CommandCircuitBreakerWrapper.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MFDLabs.Sentinels.ExecutionCircuitBreakerBase.<ExecuteAsync>d__8.MoveNext() in K:\vex\v4\31f0fc4c68f5cb2e\Assemblies\MFDLabs.Sentinels\Base\ExecutionCircuitBreakerBase.cs:line 42
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MFDLabs.Grid.Bot.Guards.CommandCircuitBreakerWrapper.<ExecuteAsync>d__7.MoveNext() in K:\vex\v4\31f0fc4c68f5cb2e\Shared\MFDLabs.GridCommands\Guards\CommandCircuitBreakerWrapper.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MFDLabs.Grid.Bot.Registries.CommandRegistry.<>c__DisplayClass22_0.<<ExecuteCommandInNewThread>b__0>d.MoveNext() in K:\vex\v4\31f0fc4c68f5cb2e\Shared\MFDLabs.GridCommands\CommandRegistry.cs:line 728
+Exception Source: MFDLabs.GridCommands
+Exception TargetSite: Void MoveNext()
+Exception Data: System.Collections.ListDictionaryInternal
